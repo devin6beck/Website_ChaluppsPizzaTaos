@@ -1,9 +1,15 @@
 /* === GLOBAL STYLES === */
+* {
+  box-sizing: border-box; /* ensures consistent sizing */
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  background: linear-gradient(to bottom right, #f9f9f9, #e6e6e6); /* gradient background */
+  color: #333;
 }
 
 /* === NAVIGATION MENU === */
@@ -36,7 +42,9 @@ nav ul li a:hover {
 
 /* === MAIN CONTENT === */
 .main-content {
-  padding: 20px;
+  padding: 40px;
+  max-width: 1000px; /* set a maximum width */
+  margin: 0 auto; /* center the content */
 }
 
 .main-title {
@@ -53,37 +61,101 @@ nav ul li a:hover {
   max-width: 600px;
   display: block;
   margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow for the image */
 }
 
 /* === EXTERNAL LINKS === */
 .external-links a {
-  display: block;
-  margin-bottom: 10px;
-  color: #007BFF;
+  display: inline-block; /* for padding purposes */
+  margin: 10px 5px; /* some spacing between buttons */
+  padding: 10px 15px; /* button padding */
+  color: #FFF;
+  background-color: #007BFF;
+  border-radius: 5px; /* rounded corners */
   text-decoration: none;
+  transition: background-color 0.3s; /* smooth hover effect */
 }
 
 .external-links a:hover {
-  text-decoration: underline;
+  background-color: #0056b3; /* darken on hover */
 }
 
 /* === FOOTER === */
 .site-footer {
-  background-color: #f7f7f7;
-  padding: 10px;
+  background-color: #333;
+  padding: 20px;
   text-align: center;
+  color: white;
+  margin-top: 40px; /* space above footer */
+}
+
+/* === CONTACT SECTION === */
+.contact-section {
+  background-color: #f4f4f4; /* light gray background */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  margin-bottom: 20px;
+}
+
+.contact-section a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact-section a:hover {
+  background-color: #0056b3;
+}
+
+/* === SCROLL BUTTONS === */
+.arrow-btn {
+  position: fixed; /* fixed positioning */
+  bottom: 20px; /* bottom aligned */
+  right: 20px; /* right aligned */
+  background-color: #007BFF; /* blue background */
+  color: white; /* white arrow */
+  border: none;
+  border-radius: 50%; /* circular buttons */
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-left: 10px; /* spacing between buttons */
+  transition: background-color 0.3s; /* smooth hover effect */
+}
+
+.arrow-btn.arrow-down {
+  right: 60px; /* shift the down button to the left */
+}
+
+.arrow-btn:hover {
+  background-color: #0056b3; /* darken on hover */
 }
 
 /* === 404 PAGE === */
 .container-404 {
-  margin: 10px auto;
+  margin: 50px auto; /* more vertical spacing */
   max-width: 600px;
   text-align: center;
+  padding: 40px; /* padding for 404 container */
+  background-color: #ffffff; /* white background */
+  border-radius: 8px; /* rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
 }
 
 .error-code {
   margin: 30px 0;
-  font-size: 4em;
+  font-size: 5em; /* larger size for 404 */
   line-height: 1;
   letter-spacing: -1px;
+  color: #007BFF; /* blue color */
 }
