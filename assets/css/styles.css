@@ -85,7 +85,6 @@ nav ul li a:hover {
   padding: 20px;
   text-align: center;
   color: white;
-  margin-top: 40px; /* space above footer */
 }
 
 .gmaps-link {
@@ -153,7 +152,6 @@ nav ul li a:hover {
 /* === STICKY EXTERNAL LINKS === */
 body {
   position: relative; /* relative positioning to the body */
-  padding-bottom: 50px; /* space for the sticky links */
 }
 
 .external-links {

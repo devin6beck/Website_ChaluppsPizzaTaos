@@ -44,17 +44,20 @@
 
 <p>
         ©  2023 Unofficial  |  I'll take any right I can get please.</p>
-</footer><script>
-document.addEventListener('scroll', function() {
-    var footer = document.querySelector('.site-footer');
-    var links = document.querySelector('.external-links');
-    var footerRect = footer.getBoundingClientRect();
-    
-    if (footerRect.top <= window.innerHeight) {
-        links.style.position = 'static';
-    } else {
-        links.style.position = 'fixed';
-    }
-});
-</script></body>
-</html>
+</footer>
+
+
+<script>
+  document.addEventListener('scroll', function() {
+      var footer = document.querySelector('.site-footer');
+      var links = document.querySelector('.external-links');
+      var footerRect = footer.getBoundingClientRect();
+      
+      if (footerRect.top <= window.innerHeight) {
+          links.style.position = 'static';
+      } else {
+          links.style.position = 'fixed';
+      }
+  });
+  </script></body>
+  </html>
