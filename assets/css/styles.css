@@ -79,14 +79,6 @@ nav ul li a:hover {
   background-color: #0056b3; /* darken on hover */
 }
 
-/* === FOOTER === */
-.site-footer {
-  background-color: #333;
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-
 .gmaps-link {
   background-color: #0a2e06;
   color: #FFF;
@@ -102,34 +94,34 @@ nav ul li a:hover {
   color: #FFF;
 }
 
-/* === CONTACT SECTION === */
-.contact-section {
-  background-color: #0a2e06; /* light gray background */
-  padding: 40px 0;
+/* === STICKY EXTERNAL LINKS === */
+.external-links {
+  position: fixed; /* fixed positioning to make it sticky */
+  bottom: 0; /* align to the bottom */
+  left: 0; /* align to the left */
+  width: 100%; /* full width */
+  background-color: rgba(51, 51, 51, 0.9); /* slightly transparent background */
+  text-align: center; /* center the links */
+  padding: 10px 0; /* padding top and bottom */
+  z-index: 1000; /* high z-index to make sure it's above other elements */
+}
+
+.site-footer {
+  position: relative; /* relative positioning to the footer */
+  z-index: 1001; /* higher z-index than the sticky links */
+}
+
+
+/* === FOOTER === */
+.site-footer {
+  background-color: #333;
+  padding: 20px;
   text-align: center;
-}
-
-.contact-section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.contact-section p {
-  margin-bottom: 20px;
-}
-
-.contact-section a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007BFF;
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
 }
 
-.contact-section a:hover {
-  background-color: #0056b3;
-}
+
+
 /* === 404 PAGE === */
 .container-404 {
   margin: 50px auto; /* more vertical spacing */
@@ -147,25 +139,4 @@ nav ul li a:hover {
   line-height: 1;
   letter-spacing: -1px;
   color: #007BFF; /* blue color */
-}
-
-/* === STICKY EXTERNAL LINKS === */
-body {
-  position: relative; /* relative positioning to the body */
-}
-
-.external-links {
-  position: fixed; /* fixed positioning to make it sticky */
-  bottom: 0; /* align to the bottom */
-  left: 0; /* align to the left */
-  width: 100%; /* full width */
-  background-color: rgba(51, 51, 51, 0.9); /* slightly transparent background */
-  text-align: center; /* center the links */
-  padding: 10px 0; /* padding top and bottom */
-  z-index: 1000; /* high z-index to make sure it's above other elements */
-}
-
-.site-footer {
-  position: relative; /* relative positioning to the footer */
-  z-index: 1001; /* higher z-index than the sticky links */
 }
