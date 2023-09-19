@@ -149,3 +149,25 @@ nav ul li a:hover {
   letter-spacing: -1px;
   color: #007BFF; /* blue color */
 }
+
+/* === STICKY EXTERNAL LINKS === */
+body {
+  position: relative; /* relative positioning to the body */
+  padding-bottom: 50px; /* space for the sticky links */
+}
+
+.external-links {
+  position: fixed; /* fixed positioning to make it sticky */
+  bottom: 0; /* align to the bottom */
+  left: 0; /* align to the left */
+  width: 100%; /* full width */
+  background-color: rgba(51, 51, 51, 0.9); /* slightly transparent background */
+  text-align: center; /* center the links */
+  padding: 10px 0; /* padding top and bottom */
+  z-index: 1000; /* high z-index to make sure it's above other elements */
+}
+
+.site-footer {
+  position: relative; /* relative positioning to the footer */
+  z-index: 1001; /* higher z-index than the sticky links */
+}

@@ -1,82 +1,63 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width,  initial-scale=1.0" name="viewport"/>
-    <meta content="Description of the page" name="description"/>
-    <title>
-      Chalupp's Pizza Taos
-    </title>
-    <link href="/assets/css/styles.css" rel="stylesheet"/>
-    <link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-    <link href="/assets/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-    <link href="/assets/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-    <link href="/assets/images/favicon.png" rel="icon" type="image/png"/>
-    <link href="/assets/images/site.webmanifest" rel="manifest"/>
-  </head>
-  <body>
-    <main class="main-content">
-      <img alt="Chalupp's Pizza Logo" class_="logo-image" src="/assets/images/ChaluppsPizzaSignLogo.png"/>
-      <h1 class="main-title">
-        Welcome to Chalupp's Pizza!
-      </h1>
-      <p class_="phone-number">
-        Phone:  (575)  758-0090
-      </p>
-      <p class="description">
-        We're delighted to serve you the best pizza in Taos,  New Mexico.
-      </p>
-      <p class="description">
-        Family-owned and operated,  we use only the finest ingredients for our pizzas.
-      </p>
-      <img alt="Menu" class="menu-image" src="/assets/images/menu.jpg"/>
-    </main>
-    <!--  External Links  -->
-    <!--  Contact Us Section  -->
-    <div class_="hours-section">
-      <h2>
-        Business Hours
-      </h2>
-      <ul>
-        <li>
-          Sunday:  11 AM–8 PM
-        </li>
-        <li>
-          Monday:  Closed
-        </li>
-        <li>
-          Tuesday:  Closed
-        </li>
-        <li>
-          Wednesday:  11 AM–9 PM
-        </li>
-        <li>
-          Thursday:  11 AM–9 PM
-        </li>
-        <li>
-          Friday:  11 AM–9 PM
-        </li>
-        <li>
-          Saturday:  11 AM–9 PM
-        </li>
-      </ul>
-    </div>
-    <footer class="site-footer">
-      <div class="external-links">
-        <a href="https://goo.gl/maps/6BMgsFkLmFqp61G26" rel="noopener noreferrer" target="_blank" class="gmaps-link">
-          Google Maps
-        </a>
-        <a href="https://www.facebook.com/p/Chalupps-Pizza-100038066606462/" rel="noopener noreferrer" target="_blank" class="facebook-link">
-          Facebook
-        </a>
-        <a href="mailto:info@chalupp-pizza.com" class="email-link">
-            Email Us
-          </a>
-      </div>
-      <p>
-        ©  2023 Unofficial  |  I'll take any right I can get please.
-      </p>
-    </footer>
-    <!--  Scroll Buttons  -->
-  </body>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,  initial-scale=1.0" name="viewport"/>
+<meta content="Description of the page" name="description"/>
+<title>Chalupp's Pizza Taos</title>
+<link href="/assets/css/styles.css" rel="stylesheet"/>
+<link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/assets/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/assets/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/assets/images/favicon.png" rel="icon" type="image/png"/>
+<link href="/assets/images/site.webmanifest" rel="manifest"/>
+</head>
+<body>
+<main class="main-content">
+<img alt="Chalupp's Pizza Logo" class_="logo-image" src="/assets/images/ChaluppsPizzaSignLogo.png"/>
+<h1 class="main-title">
+        Welcome to Chalupp's Pizza!</h1>
+<p class_="phone-number">Phone:  (575)  758-0090</p>
+<p class="description">We're delighted to serve you the best pizza in Taos,  New Mexico.</p>
+<p class="description">Family-owned and operated,  we use only the finest ingredients for our pizzas.</p>
+<img alt="Menu" class="menu-image" src="/assets/images/menu.jpg"/>
+</main>
+<!--  External Links  -->
+<!--  Contact Us Section  -->
+<div class_="hours-section">
+<h2>Business Hours</h2>
+<ul>
+<li>Sunday:  11 AM–8 PM</li>
+<li>Monday:  Closed</li>
+<li>Tuesday:  Closed</li>
+<li>Wednesday:  11 AM–9 PM</li>
+<li>Thursday:  11 AM–9 PM</li>
+<li>Friday:  11 AM–9 PM</li>
+<li>Saturday:  11 AM–9 PM</li>
+</ul>
+</div>
+
+<!--  Scroll Buttons  -->
+<div class="external-links">
+<a class="gmaps-link" href="https://goo.gl/maps/6BMgsFkLmFqp61G26" rel="noopener noreferrer" target="_blank">Google Maps</a>
+<a class="facebook-link" href="https://www.facebook.com/p/Chalupps-Pizza-100038066606462/" rel="noopener noreferrer" target="_blank">Facebook</a>
+<a class="email-link" href="mailto:info@chalupp-pizza.com">Email Us</a>
+</div><footer class="site-footer">
+
+<p>
+        ©  2023 Unofficial  |  I'll take any right I can get please.</p>
+</footer><script>
+document.addEventListener('scroll', function() {
+    var footer = document.querySelector('.site-footer');
+    var links = document.querySelector('.external-links');
+    var footerRect = footer.getBoundingClientRect();
+    
+    if (footerRect.top <= window.innerHeight) {
+        links.style.position = 'static';
+    } else {
+        links.style.position = 'fixed';
+    }
+});
+</script></body>
 </html>
